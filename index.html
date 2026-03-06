@@ -1,29 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mother's Day Website</title>
-    <style>
-        .fade {
-            animation: fade 2s;
-        }
-
-        @keyframes fade {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        .light-blue-bg {
-            background-color: lightblue;
-            padding: 10px;
-            margin: 10px 0;
-        }
-    </style>
+  <style>
+    body {
+      background-color: lightblue;
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    p {
+      animation: fadeIn 1s ease-in;
+      line-height: 1.6;
+      color: #333;
+    }
+    p:nth-child(1) { animation-delay: 0.2s; }
+    p:nth-child(2) { animation-delay: 0.6s; }
+    p:nth-child(3) { animation-delay: 1s; }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
 </head>
 <body>
-    <div class="light-blue-bg fade">I created this Mother's Day menu slideshow...</div>
-    <div class="light-blue-bg fade">This project was challenging for me...</div>
-    <div class="light-blue-bg fade">I've never made something this complex before...</div>
+  <p>I created this Mother's Day menu slideshow as a special way to show my appreciation for my mum. I wanted to make something thoughtful and unique just for her, something that would make the day feel a little more special.</p>
+  
+  <p>This project was challenging for me because I had to learn new things and spend time designing and organising the slides. Even though it was difficult at times, I kept working on it because my mum means a lot to me and I wanted to do something meaningful for her.</p>
+  
+  <p>I've never made something this complex before, but that's what makes it important to me. It represents the effort I put in and the care I have for my mum. I hope that when she sees it, she knows how much I appreciate everything she does for me.</p>
 </body>
 </html>
